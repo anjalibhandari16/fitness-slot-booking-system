@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+.container{
+    /* background-color: #84D2F6; */
+    color:#F8F4F9;
+    font-family: "Playwrite GB S", cursive;
+
+}
+
+.heading{
+    margin-block: 20px;
+}
+
+.sub_heading{
+    font-size: 16px;
+    margin-block: 10px;
+
+}
+
+.box_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    min-height: 100px;
+    max-width: 400px;
+    background-color: #59A5D8;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px 20px 20px;
+    border-radius: 10px;
+    border: 2px solid#000;
+    color:#000;
+    cursor: pointer;
+}
+
+.box_heading{
+    margin-block: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box_image{
+    height: 260px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid#000;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box_discription{
+    margin: 10px;
+}
+
+.box1image{
+    background-image: url(../../Assets/gym.jpg);
+}
+
+.box2image{
+    background-image: url(../../Assets/dance.jpg);
+}
+
+.box3image{
+    background-image: url(../../Assets/yoga.jpg);
+}
+
+.box4image{
+    background-image: url(../../Assets/cycling.jpg);
+}
+
+.box5image{
+    background-image: url(../../Assets/swimming.jpg);
+}
+
+footer{
+    background-color: #133C55;
+    margin-top: 2rem;
+    position: relative;
+    /* height: 80vh; */
+    width: 100%;
+    bottom: 0;
+}
+
+.socials{
+    border-top: 1px solid#000;
+    display: flex;
+    justify-content: center;
+}
+
+.socials a{
+
+    background: var(--color-bg);
+    color: var(--color-white);
+    padding: .2rem .5rem;
+    margin:10px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.socials a:hover{
+    background: white;
+    color: #000;
+    border-color: var(--color-bg);
+}
+
+.footer_items{
+    margin-bottom:20px;
+}
+
+.footer_items a{
+    padding-inline: 14px;
+    color: #fff;
+}
+
+.copyright{
+    font-size: 12px;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid#000; */
+}
+
+@media(max-width:600px){
+    .sub_heading{
+        font-size: 14px;
+        margin: 10px;
+    
+    }
+}

@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+body{
+  text-align: center;
+  /* color:#000; */
+  margin:0;
+  background-color: #133C55;
+  background-image: url(./Assets/tile.png)
 }
