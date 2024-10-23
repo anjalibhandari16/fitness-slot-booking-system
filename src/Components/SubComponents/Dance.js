@@ -1,6 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
+import Form from '../Form';
 
 function Dance({setClub={}}) {
+
+  const [open, setOpen] = useState(false);
+
   return (
     <div className='container-'>
 
@@ -11,9 +15,13 @@ function Dance({setClub={}}) {
     </div>
 
     <div className='slot'>
-        <div>Total Slot Available : 2</div>
+        <div>
+            <div> Class Limit : 10</div>
+            <div> Total Slot Available : 2</div>
+          </div>
         <div className='buttons'>
-          <button>Book Seat Now</button>
+          <button onClick={() => setOpen(true)}>Book Seat Now</button>
+          {open?<Form open={open} setOpen={setOpen} />:null}
           <button onClick={() => setClub(false)}>Go Back</button>
         </div>
     </div>

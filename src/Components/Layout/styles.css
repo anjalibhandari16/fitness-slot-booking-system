@@ -26,8 +26,8 @@
 .box{
     min-height: 100px;
     max-width: 400px;
-    background-color: #59A5D8;
-    background-image: none;
+    /* background-color: #59A5D8; */
+    background-image: linear-gradient(#84D2F6,#59A5D8);
     display: flex;
     flex-direction: column;
     justify-content: center;

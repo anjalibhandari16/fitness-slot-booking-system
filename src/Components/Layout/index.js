@@ -9,6 +9,7 @@ import Yoga from '../SubComponents/Yoga';
 import Dance from '../SubComponents/Dance';
 import Cycling from '../SubComponents/Cycling';
 import Swimming from '../SubComponents/Swimming';
+// import Data from '../Data';
 
 function Layout() {
 
@@ -27,7 +28,7 @@ function Layout() {
       <h1 className='heading'>Welcome to Fitness Club</h1>
       <div className='sub_heading'>Congratulations on taking the first step of your fitness journey—you should be very proud of yourself, and we’re excited to be a part of it!</div>
       <div className='sub_heading'>Choose from a Wide range of Healty Fitness Choices and Join Now.</div>
-
+      
       {!club ? 
       <div className='box_container'>
 

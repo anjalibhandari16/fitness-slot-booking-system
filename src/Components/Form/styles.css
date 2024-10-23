@@ -1,0 +1,31 @@
+.form_container{
+    /* width: 70vw;
+    height: 70vh; */
+    color: #000;
+}
+
+.content{
+    margin-block: 10px;
+}
+
+.form_details{
+    margin-block: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+
+}
+
+.form_item{
+    display: flex;
+
+    margin-block:10px;
+}
+
+label{
+    width: 35%;
+}
+
+input{
+    width: 60%;
+}
