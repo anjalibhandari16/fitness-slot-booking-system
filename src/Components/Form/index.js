@@ -2,7 +2,6 @@ import React,{useState, useEffect} from 'react';
 import Modal from 'simple-react-modal';
 import './styles.css';
 // import gymData from '../Data/gymData.json';
-import axios from 'axios';
 
 function Form({open, setOpen={}}) {
 
@@ -26,7 +25,9 @@ function Form({open, setOpen={}}) {
         console.log(formData,'b4 Submit')
         try {
             // Send a POST request to your API
-            const response = await axios.post(`http://localhost:3000/testdata1`, formData);
+            const response = await fetch.post(`http://localhost:3000/testdata1`,{
+                method: "POST",
+                body: JSON.stringify(formData),});
             console.log('Data successfully saved:', response.data);
           } catch (error) {
             console.error('Error saving data:', error);
